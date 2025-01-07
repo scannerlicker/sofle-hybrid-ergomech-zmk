@@ -61,11 +61,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - A
-  - B
-  - C
-  - D
-  - E
+  - ENTER
+  - RIGHT ARROW
+  - UP ARROW
+  - LEFT ARROW
+  - DOWN ARROW
   raise:
   - BT CLR
   - {t: BT, h: '0'}
@@ -86,10 +86,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PG UP
+  - KP 1
+  - KP 2
+  - KP 3
   - {t: ▽, type: trans}
-  - UP
-  - {t: ▽, type: trans}
-  - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LALT
@@ -98,9 +98,9 @@ layers:
   - {t: ▽, type: trans}
   - CLCK
   - PG DN
-  - LEFT
-  - DOWN
-  - RIGHT
+  - KP 4
+  - KP 5
+  - KP 6
   - DEL
   - BSPC
   - {t: ▽, type: trans}
@@ -110,10 +110,10 @@ layers:
   - PASTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP 0
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -126,11 +126,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - A
-  - B
-  - C
-  - D
-  - E
+  - ENTER
+  - NEXT
+  - VOLUME UP
+  - PREVIOUS
+  - VOLUME DOWN
   adjust:
   - BT CLR
   - {t: BT, h: '0'}
@@ -196,3 +196,8 @@ layers:
   - C
   - D
   - E
+combos:
+- p: [31, 32, 33]
+  k: RET
+- p: [19, 20, 21]
+  k: BACKSPACE
