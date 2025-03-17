@@ -1,6 +1,7 @@
+layout: {zmk_keyboard: sofle_ergomech}
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '', ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z,
-    X, C, V, B, N, M, ',', ., /, RSHFT, MUTE, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI, ENTER, RIGHT, UP ARROW, LEFT, DOWN]
+  default: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, TAB, Q, W, E, R, T, Y, U, I, O, P, ']', '-', A, S, D, F, G, H, J, K, L, ;, \, LSHFT, Z,
+    X, C, V, B, N, M, ',', ., /, RSHFT, '&mkp MB1', LGUI, LALT, LCTRL, SPACE, lower, raise, SPACE, RCTRL, RALT, RGUI, ENTER, RIGHT, UP ARROW, LEFT, DOWN]
   lower:
   - '&studio_unlock'
   - F1
@@ -14,17 +15,17 @@ layers:
   - F9
   - F10
   - F11
-  - '`'
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - CUT
+  - COPY
+  - PASTE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - F12
   - {t: ▽, type: trans}
   - '!'
@@ -50,6 +51,7 @@ layers:
   - ':'
   - \
   - {t: ▽, type: trans}
+  - PLAY PAUSE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -60,12 +62,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - A
-  - B
-  - C
-  - D
-  - E
+  - PLAY PAUSE
+  - NEXT
+  - BACK
+  - PREVIOUS
+  - FORWARD
   raise:
   - BT CLR
   - {t: BT, h: '0'}
@@ -73,49 +74,48 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
+  - KP PLUS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - HOME
   - {t: ▽, type: trans}
   - INS
   - PSCRN
   - CMENU
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PG UP
-  - {t: ▽, type: trans}
-  - UP
-  - {t: ▽, type: trans}
-  - '0'
-  - {t: ▽, type: trans}
+  - KP MINUS
+  - KP 7
+  - KP 8
+  - KP 9
+  - PAUSE BREAK
+  - PAGE UP
   - {t: ▽, type: trans}
   - LALT
   - LCTRL
   - LSHFT
   - {t: ▽, type: trans}
   - CLCK
-  - PG DN
-  - LEFT
-  - DOWN
-  - RIGHT
-  - DEL
-  - BSPC
+  - KP ASTERISK
+  - Sft+KP 4
+  - KP 5
+  - KP 6
+  - INSERT
+  - PAGE DOWN
   - {t: ▽, type: trans}
   - UNDO
   - CUT
   - COPY
   - PASTE
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - KP SLASH
+  - KP 1
+  - KP 2
+  - KP 3
+  - PRINTSCREEN
+  - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -124,13 +124,14 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
+  - KP 0
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - A
-  - B
-  - C
-  - D
-  - E
+  - '&mkp MB1'
+  - '&mmv MOVE_RIGHT'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
   adjust:
   - BT CLR
   - {t: BT, h: '0'}
@@ -184,10 +185,10 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
-  - ''
   - ''
   - {type: held}
+  - {type: held}
+  - ''
   - ''
   - ''
   - ''
@@ -196,3 +197,8 @@ layers:
   - C
   - D
   - E
+combos:
+- p: [19, 20, 21]
+  k: BACKSPACE
+- p: [31, 32, 33]
+  k: ENTER
